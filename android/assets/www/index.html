@@ -1,0 +1,63 @@
+<!-- <!DOCTYPE HTML>
+<html>
+<head>
+<title>PhoneGap</title>
+<script type="text/javascript" charset="utf-8" src="cordova-1.5.0.js"></script>
+</head>
+<body>
+	<h1>Hello PhoneGap</h1>
+</body>
+</html>  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function displayDate()
+{
+document.getElementById("demo").innerHTML=Date();
+}
+
+function changeColor(Color)
+{
+document.body.style.backgroundColor = Color;
+alert('Color is changed');
+}
+</script>
+<style>
+body
+{
+	background-color: #F6358A;
+}
+h1
+{
+	color: #FFFFFF;
+	text-align: center;
+}
+button
+{
+	color: #808080;
+	border: solid;
+	position: relative;
+}
+p{
+	border-style: dotted;
+}
+</style>
+</head>
+<body>
+
+<h1>My First Phonegap Application</h1>
+<p id="demo">**Date will display here**</p>
+
+<button type="button" onclick="displayDate()">Display Date</button>
+
+<button type="button" onclick="changeColor('YELLOW')">Yellow</button>
+<button type="button" onclick="changeColor('BLUE')">Blue</button>
+<button type="button" onclick="changeColor('RED')">Red</button>
+<button type="button" onclick="changeColor('GREEN')">Green</button>
+<button type="button" onclick="changeColor('ORANGE')">Orange</button>
+<button type="button" onclick="changeColor('#F6358A')">Default</button>
+
+</body>
+</html> 
